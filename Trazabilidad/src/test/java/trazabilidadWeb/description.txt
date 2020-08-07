@@ -1,0 +1,45 @@
+SAQ001-SAQ002-SAQ003_ValidacionAcceso
+	SAQ001
+	1. Para validar es siguiente escenario se requiere de un documento válido y con un pedido en el evento IN_TOA para validar
+		el correcto ingreso de un cliente.
+
+	SAQ002
+	1. Para validar es siguiente escenario se requiere de un documento válido y con un pedido en el evento IN_TOA para validar
+		el correcto ingreso de un cliente así como el envio del token.
+
+	SAQ003
+	1. Para validar es siguiente escenario se requiere de un documento que no tenga pedido en vuelo, con ello validar al denegar el acceso.
+	
+SAQ004-SAQ005-SAQ007_Reagendamiento
+	SAQ004
+	1. Para validar es siguiente escenario se requiere de un documento válido y con un pedido en el evento IN_TOA para realizar el agendamiento.
+
+	SAQ005
+	1. Para validar es siguiente escenario se requiere de un pedido agendado para poder reagendar, tener mapeado las políticas de reagendamiento.
+
+
+SAQ006-SAQ008_CambiodeContacto
+	SAQ006
+	1. Para validar es siguiente escenario se requiere de un documento que se encuentre registrado en trazabilidad y añadir/cambiar los contactos para un determinado pedido.
+
+	SAQ008
+	1. Verificar que se le envie adicionalmente al contacto los mensajes de agendamiento y el de seguimiento; tener mapeado que actualmente según políticas solo se está enviando notificacion al titular.
+
+SAQ009_CambiodeDireccion
+	SAQ009
+	1.  Tener un pedido en el evento IN_TOA y verificar el ingreso para el cambio de dirección.
+
+SAQ010_Product Support
+	SAQ010
+	1. Verificar que se un cliente tengas asignado varios pedidos en línea. Para validar que trazabilidad soporte más de dos productos.
+SAQ011_LoginBackOfficeOLD
+	SAQ011
+	1. Verificar el ingreso correcto para validar el cambio de dirección.
+
+SAQ012_CancelBeforeScheduling
+	SAQ012
+	1. Validar que un cliente tenga un pedido sin agendar, en el evento IN_TOA para poder realizar el cancelamiento del pedido.
+
+SAQ013_CancelAfterScheduling
+	SAQ013
+	1. Validar que un cliente tenga un pedido agendado para poder realizar el cancelamiento del pedido.
