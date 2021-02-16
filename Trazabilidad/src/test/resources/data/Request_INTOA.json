@@ -1,0 +1,12 @@
+{
+    "header": {
+        "appName": "APP_PROVISION",
+        "user": "USER_TRAZABILIDAD",
+        "operation": "OPER_PROVISION_UPDATE_FROM_TOA"
+    },
+    "body": {
+        "data": "IN_TOA|BK_PROVISION_1|{{xa_request}}|2019-12-19 10:33:40|{{st}}|{{xa_request}}|{{xa_request}}|0|Provision|CORTES//HACER VERIFICACION COMPLETA/ PLZ 1 DÖA// 985295436-14626477 LLAMAR|{{numCelular}}|PASQUEL PAUCAR, JAVIER JOSE|<XA_DATOS_REQ_CMS><DATOS_REQ_CMS><IndicadorOrigenRequerimiento>A</IndicadorOrigenRequerimiento><DescripcionTipoRequerimiento>REPORTE C/GARANTIA SIMPLE</DescripcionTipoRequerimiento><DescripcionMotivoDeGeneracion>PROBLEMA NAVEGACION</DescripcionMotivoDeGeneracion><HoraRegistroDelRequerimiento>10:30:24</HoraRegistroDelRequerimiento><FechaAsignacion>2019-12-19</FechaAsignacion><HoraAsignacion>10:31:13</HoraAsignacion><FechaInstalacionALTA>2015-02-02</FechaInstalacionALTA><HoraInstalacionALTA>09:22:14</HoraInstalacionALTA><IdTematico>0</IdTematico><DescripcionTematico></DescripcionTematico><IdBbk>0</IdBbk><IndDuo></IndDuo></DATOS_REQ_CMS></XA_DATOS_REQ_CMS>|CL S/N 0 PISO  INT  MNZ A LT 13 AS: LOS ANGELES|<XA_DATOS_CLIENTE><DATOS_CLIENTE><DocumentoIdentidad>{{numDoc}}</DocumentoIdentidad><CodigoDepartamento>001</CodigoDepartamento><CodigoProvincia>001</CodigoProvincia><DescripcionProvincia>LIMA</DescripcionProvincia><Condicion>ACTIVO</Condicion><IndicadorVip></IndicadorVip><Situacion>03</Situacion><DescripcionSituacion>PENDIENTE</DescripcionSituacion><CategoriaCliente>NO</CategoriaCliente><DescripcionCategoriaCliente>CLIENTE NORMAL</DescripcionCategoriaCliente></DATOS_CLIENTE></XA_DATOS_CLIENTE>|3000-01-01|Telef¢nica|BK_PROVISION_1|-76.935684|-12.033743",
+        "orderCode": "534554",
+        "status": "IN_TOA"
+    }
+}

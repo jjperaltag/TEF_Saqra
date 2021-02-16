@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="103.433822">
-<testcase classname="Iniciar Sesion en el sistema" name="Como Cliente Activo, me logueo al sistema" time="103.433822">
-<system-out><![CDATA[Given Soy Cliente e ingreso al sistema "1"..................................passed
-When Hacemos login seleccionando el tipo_documento y numero_documento "1"...passed
-Then El inicio de sesión es exitoso "1".....................................passed
-]]></system-out>
-</testcase>
-</testsuite>

@@ -1,0 +1,12 @@
+{
+    "header": {
+        "appName": "APP_PROVISION",
+        "user": "USER_TRAZABILIDAD",
+        "operation": "OPER_INSERT_ORDER"
+    },
+    "body": {
+        "data": "VENTASFIJA_PARKUR|TGESTIONA_FVD|{{mt}}|{{nombreCliente}}|{{numDoc}}|{{numCelular}}|AV LIMA 278|Lima|Lima|San Isidro|{{plan}}|{{xa_request}}|Alta Pura|{{tipoDocumento}}|23486||{{estado}}|30/04/2020 15:22:45|30/04/2020 15:22:43|||DUO BA|DUO BA|-77.03439350200000035329|-12.09307672899999985816|30|68|No|23486|89.90|89.90|MASIVA|2|60|CONTADO|10.00|6|HFC|NO APLICA|NO APLICA||MODEM SMART HFC COMODATO|ATIS||16732|0|0|0||||||||||||||||||||||||||||||||",
+        "status": "{{estado}}",
+        "dataOrigin": "VF"
+    }
+}

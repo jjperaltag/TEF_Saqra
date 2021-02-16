@@ -8,4 +8,4 @@ Feature: Verificar que trazabilidad soporte a un usuario cuando este tenga mas d
     Then El inicio de sesión es exitoso "<Id_Soporte>"
     Examples:
       | Id_Soporte |
-      |1|
+      |4|

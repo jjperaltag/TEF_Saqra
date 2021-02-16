@@ -28,7 +28,7 @@ public class Hook {
     /**
      * Borra todos los coockies e instancia el browser indicado
      */
-    public  WebDriver  browser(String sbrowser, String strURL) throws Exception {
+    public  WebDriver  setUp(String sbrowser, String strURL) throws Exception {
 
         System.out.println("scenario:");
         String sCarpAct = "./results/screenshot/";
@@ -66,7 +66,7 @@ public class Hook {
 
    public static void closeBrowser(WebDriver iDriver) throws Exception {
         generarWordFile();
-        iDriver.quit();
+     //   iDriver.quit();
     }
 
     public static void generarWordFile() throws Exception {

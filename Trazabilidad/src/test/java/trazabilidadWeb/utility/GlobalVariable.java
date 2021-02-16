@@ -12,5 +12,11 @@ public class GlobalVariable {
 	public static final String AUT_SCREENSHOT_PATH = "target/images/";
 	public static final String AUT_STEPREPORT_PATH = "target/Extent_Report/stepReport.html";
 
+	public static final String PATH_VALIDACION_ACCESO = "./src/test/resources/data/TestData_ValidaciondeAcceso.xlsx"; //Ruta Agendamiento
+	public static final String HOJA_VALIDACIONACCESO = "DatosValidacionAcceso";
+
+	public static final String PATH_API = "./src/test/resources/data/TestData_API.xlsx"; //Ruta APIS
+	public static final String HOJA_API = "Datos_API"; //Hoja Excel Datos_API
+
 
 }

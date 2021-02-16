@@ -7,4 +7,4 @@ Feature: Iniciar Sesion en el sistema
     Then El inicio de sesión es exitoso "<Id_ValidarAcceso>"
     Examples:
       | Id_ValidarAcceso |
-      |1|
+      |5|

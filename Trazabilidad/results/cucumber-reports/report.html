@@ -39,6 +39,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -52,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 3, 2020 12:49:19 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 3, 2020 05:03:16 PM</span>
 				</a>
 			</li>
 			<li>
@@ -78,6 +79,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -138,10 +141,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -153,10 +156,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -168,10 +171,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='83.333%'>5</span> others
 				</div>
 			</div>
 		</div>
@@ -185,41 +188,56 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Iniciar Sesion en el sistema</span>
-						<span class='test-time'>Aug 3, 2020 12:49:22 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>El usuario puede agendar la visita de Tecnico</span>
+						<span class='test-time'>Sep 3, 2020 05:03:16 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 1m 44s+856ms</span>
+<div class='scenariooutline node' test-id='2' status='fail'>
+	<span class='duration right label'>0h 0m 35s+859ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">Como Cliente Activo, me logueo al sistema</span>
+		<span class="desc-text">Como Usuario Activo, me logueo al sistema y programo un agendamiento</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
+		<li test-id='3' class='node scenario fail' status='fail'>
 			<div class='category-list'>
 				<span class='category label white-text'>@SmokeTest</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Como Cliente Activo, me logueo al sistema</span>
+			<span class="bdd-step-name">Como Usuario Activo, me logueo al sistema y programo un agendamiento</span>
 			
 				<ul class='steps'>
-					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given Soy Cliente e ingreso al sistema "1"</span>
-							<div class='pre'>passed</div>
+					<li test-id='4' class='node given fail' status='fail'><b>Given</b>
+						<span class="bdd-step-name">Given Se ejecuta el servicio REST PENDIENTE, INGRESAR, INTOA "1"</span>
+							<div class='pre'><pre>java.lang.NullPointerException
+	at trazabilidadWeb.tests.Steps.ejecuto_servicios_api(Steps.java:241)
+	at ✽.Given Se ejecuta el servicio REST PENDIENTE, INGRESAR, INTOA "1"(src/test/resources/feature/Agendamiento.feature:5)
+</pre></div>
 					</li>
-					<li test-id='5' class='node when pass' status='pass'><b>When</b>
+					<li test-id='5' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And Soy Cliente e ingreso al sistema "1"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='6' class='node when skip' status='skip'><b>When</b>
 						<span class="bdd-step-name">When Hacemos login seleccionando el tipo_documento y numero_documento "1"</span>
-							<div class='pre'>passed</div>
+							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='6' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then El inicio de sesión es exitoso "1"</span>
-							<div class='pre'>passed</div>
+					<li test-id='7' class='node when skip' status='skip'><b>When</b>
+						<span class="bdd-step-name">When Agendo pedido de visita, en la fecha de hoy  y turno mañana, donde recibire al tecnico, en la direccion registrada. "1"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='8' class='node when skip' status='skip'><b>When</b>
+						<span class="bdd-step-name">When Se programa visita en fecha seleccionada "1"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='9' class='node then skip' status='skip'><b>Then</b>
+						<span class="bdd-step-name">Then Se confirma el agendamiento "1"</span>
+							<div class='pre'>skipped</div>
 					</li>
 				</ul>
 		</li>
@@ -281,13 +299,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@SmokeTest</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -302,9 +320,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 3, 2020 12:49:23 PM</td>
-										<td class='linked' test-id='3'>Iniciar Sesion en el sistema.Como Cliente Activo, me logueo al sistema.Como Cliente Activo, me logueo al sistema</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Sep 3, 2020 05:03:16 PM</td>
+										<td class='linked' test-id='3'>El usuario puede agendar la visita de Tecnico.Como Usuario Activo, me logueo al sistema y programo un agendamiento.Como Usuario Activo, me logueo al sistema y programo un agendamiento</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -323,6 +341,70 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.NullPointerException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Sep 3, 2020 05:03:16 PM</td>
+                                                        <td class='linked' test-id='4'>El usuario puede agendar la visita de Tecnico.Como Usuario Activo, me logueo al sistema y programo un agendamiento.Como Usuario Activo, me logueo al sistema y programo un agendamiento.Given Se ejecuta el servicio REST PENDIENTE, INGRESAR, INTOA "1"</td>
+                                                        <td><pre><pre>java.lang.NullPointerException
+	at trazabilidadWeb.tests.Steps.ejecuto_servicios_api(Steps.java:241)
+	at ✽.Given Se ejecuta el servicio REST PENDIENTE, INGRESAR, INTOA "1"(src/test/resources/feature/Agendamiento.feature:5)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -344,25 +426,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 3, 2020 12:49:19 PM</div>
+					<div class='panel-lead'>Sep 3, 2020 05:03:16 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 3, 2020 12:51:07 PM</div>
+			 		<div class='panel-lead'>Sep 3, 2020 05:03:52 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>107,986ms</div>
+					<div class='panel-lead'>36,056ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -379,11 +461,11 @@
 						</tr>
 						<tr>
 							<td>@SmokeTest</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -399,31 +481,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 1,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
-				passGrandChild: 3,
-				failGrandChild: 0,
+				passGrandChild: 0,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 5,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 6,
 			};
 		</script>
 		

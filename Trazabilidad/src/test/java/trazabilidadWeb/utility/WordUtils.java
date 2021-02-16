@@ -4,6 +4,7 @@ import org.apache.poi.util.Units;
 import org.apache.poi.xwpf.model.XWPFHeaderFooterPolicy;
 import org.apache.poi.xwpf.usermodel.*;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.*;
+import trazabilidadWeb.helpers.BasePage;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -21,6 +22,7 @@ public class WordUtils {
 
     public static void createDoc(String testCaseName, List<String> listScreen) throws Exception {
         try {
+            BasePage basePage = new BasePage();
             // Blank Document
             XWPFDocument document = new XWPFDocument();
             XWPFParagraph paragraph = document.createParagraph();
@@ -34,7 +36,7 @@ public class WordUtils {
             int val = 0;
             for (String file : listScreen) {
                 String imgFile = "./results/screenshot/" + file;
-                run.setText(val + 1 + ". " + ScreenshotUtility.acciones.get(val) + ":");
+                run.setText(val + 1 + ". " + ScreenshotUtility.acciones.get(val) + " - Hora y Fecha de Ejecución - "+ basePage.obtenerFechaYHora()+":");
         //        System.out.println(val);
                 val++;
                 run.addBreak();

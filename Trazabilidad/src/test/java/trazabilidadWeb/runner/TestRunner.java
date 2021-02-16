@@ -13,8 +13,8 @@ import java.io.File;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-        //    features = "src/test/resources/feature/OpenCart.feature"
-        features =  "src/test/resources/feature/FlujoConexion.feature" //Se ejecutaran todos los archivos features, por orden alfabetico segun especificado en el campo Feature.
+    features = "src/test/resources/feature/Agendamiento.feature"
+        //        features =  "src/test/resources/feature/ValidacionAcceso.feature" //Se ejecutaran todos los archivos features, por orden alfabetico segun especificado en el campo Feature.
         , plugin = {"com.cucumber.listener.ExtentCucumberFormatter:results/cucumber-reports/report.html",
         "junit:results/cucumber-reports/Cucumber.xml",
         "html:results/cucumber-reports"} //Formato de reporte generado por Cucumber
@@ -30,17 +30,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 public static void writeExtentReport() {
 
     Reporter.loadXMLConfig(new File("./src/extent-config.xml"));
-//    Reporter.loadXMLConfig(new File("D:\\Automation\\FrWk_BDD_OpenCart_BK\\BK4\\FrWk_BDD_OpenCart\\src\\extent-config.xml"));
 }
-
-
-    class UsersRunner<Karate> {
-        @Karate.Test
-        Karate testUsers() {
-            return Karate.run("classpath:Triaje/Flujos/FlujoConexion.feature").tags("@SmokeTest").relativeTo(getClass());
-        }}
-
-
 
 }
 

@@ -27,3 +27,13 @@ x
 Hsrc/test/java/trazabilidadWeb/pageObject/P009_CancelAfterScheduling.java,2\f\2fe984acd9d0e948087bf6c0bbb5b1c4bfc10994
 _
 /src/test/java/trazabilidadWeb/helpers/Hook.java,a\a\aa35c0e0f937dd73979d13ac4ee72c6396e776be
+l
+<src/test/java/trazabilidadWeb/helpers/ConectionsMethods.java,3\5\356154040541a9ee5d987974ce8aae188bf1e25e
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+`
+0src/test/java/trazabilidadWeb/flujos/Flujo1.java,7\7\7731d5d7d7dcc8914ddd91acf813f0fb356ea5b9
+e
+5src/test/java/trazabilidadWeb/utility/ExcelUtils.java,b\3\b31fc8d732671aa500d08536a288a0343152db2a
+d
+4src/test/java/trazabilidadWeb/utility/WordUtils.java,0\4\04d8dd49b522b445d3fb92738b81118538a09082

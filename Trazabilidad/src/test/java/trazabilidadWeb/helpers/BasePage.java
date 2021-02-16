@@ -10,6 +10,8 @@ package trazabilidadWeb.helpers;
 
 import java.awt.*;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 import trazabilidadWeb.utility.*;
 import org.openqa.selenium.*;
@@ -412,5 +414,24 @@ public class BasePage {
         }
         return element;
     }
+    public String obtenerFechaYHora() throws Exception {
+        String resultado="";
+        try {
+            Calendar calendario = Calendar.getInstance();
+            calendario = new GregorianCalendar();
+            int dia = calendario.get(Calendar.DAY_OF_MONTH);
+            int mes = calendario.get(Calendar.MONTH);
+            mes = mes + 1;
+            int year = calendario.get(Calendar.YEAR);
+            int hora = calendario.get(Calendar.HOUR_OF_DAY);
+            int minutos = calendario.get(Calendar.MINUTE);
+            int segundos = calendario.get(Calendar.SECOND);
+            resultado = hora + ":" + minutos + ":" + segundos + " " + dia + "/" + mes + "/" + year;
 
+        } catch (AssertionError e) {
+            e.printStackTrace();
+            Assert.fail("Fallo obtener fecha y hora",e);
+        }
+        return resultado;
+    }
 }

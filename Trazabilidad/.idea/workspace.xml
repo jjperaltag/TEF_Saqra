@@ -41,28 +41,30 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="cancelacion-despues_de_agendado" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/drivers" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrador\Desktop\ÚLTIMO - ° -\Trazabilidad\src\test\resources\feature" />
-      <recent name="C:\Users\Administrador\Desktop\ÚLTIMO - ° -\Trazabilidad\src\test\java\trazabilidadWeb\utility" />
-      <recent name="C:\Users\Administrador\Desktop\ÚLTIMO - ° -\Trazabilidad\src\test\resources\data" />
-      <recent name="C:\Users\user\Desktop\kukis\FrWk_BDD_OpenCart_Celeste\src\test\resources\data" />
-      <recent name="C:\Users\user\Desktop\FRAMEWORK AUTOMATIZACIÓN\BK_26_Feb\FrWk_BDD_OpenCart_Celeste\src\test\resources\data" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="trazabilidadWeb.utility" />
-      <recent name="nombreProyecto.pageObject" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\FRAMEWORK AUTOMATIZACIÓN\BK_26_Feb\FrWk_BDD_OpenCart_Celeste\src\test\resources\feature" />
       <recent name="D:\Automation\FrWk_BDD_OpenCart_BK\BK4\FrWk_BDD_OpenCart\src\test\resources\data" />
       <recent name="D:\Automation\FrWk_BDD_OpenCart_BK\BK4\FrWk_BDD_OpenCart\src\test\resources\feature" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="trazabilidadWeb.utility" />
+      <recent name="trazabilidadWeb.helpers" />
+      <recent name="trazabilidadWeb.Flujos" />
+      <recent name="nombreProyecto.pageObject" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Automatizacion\Trazabilidad\13 Agosto\Trazabilidad\src\test\resources\drivers" />
+      <recent name="D:\Automatizacion\Trazabilidad\13 Agosto\Trazabilidad\src\test\resources\data" />
+      <recent name="C:\Users\Administrador\Desktop\ÚLTIMO - ° -\Trazabilidad\src\test\resources\feature" />
+      <recent name="C:\Users\Administrador\Desktop\ÚLTIMO - ° -\Trazabilidad\src\test\java\trazabilidadWeb\utility" />
+      <recent name="C:\Users\Administrador\Desktop\ÚLTIMO - ° -\Trazabilidad\src\test\resources\data" />
     </key>
   </component>
   <component name="RunDashboard">
